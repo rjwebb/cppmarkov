@@ -1,0 +1,13 @@
+pdf:
+     a -> 0.1
+     b -> 0.5
+     c -> 0.4
+
+then the cdf:
+     a -> 0.1
+     b -> 0.6
+     c -> 1.0
+
+say you want to sample from the distribution, then uniformly generate a random number (p) between 0.0 and 1.0
+then do a binary search over the cdf to find the value whose cdf is just above p
+
